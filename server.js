@@ -24,8 +24,6 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.get("/", (req, res) => res.json({ message: 'Welcome api games-colab' }))
-
 // Serve Static files
 app.use("/files", express.static(path.join(__dirname, "uploads")));
 
